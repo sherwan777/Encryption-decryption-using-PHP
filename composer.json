@@ -1,0 +1,7 @@
+{
+    "require": {
+        "phpseclib/phpseclib": "^3.0",
+        "mdanter/ecc": "^0.2.0",
+        "paragonie/sodium_compat": "^1.20"
+    }
+}

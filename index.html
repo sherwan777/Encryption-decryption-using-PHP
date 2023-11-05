@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encryption / Decryption using ECC</title>
+    <link rel="stylesheet" href="styles1.css" />
+  </head>
+  <body>
+    <div class="One">
+      <div class="box key">
+          <h2>Generate Encryption Keys</h2>
+          <label for="publicKey">Public Encryption Key:</label>
+          <textarea id="publicKey" placeholder="Your public encryption key "></textarea>
+          <label for="privateKey">Private Decryption Key:</label>
+          <textarea id="privateKey" placeholder="Your private decryption key "></textarea>
+          <button id="generate">Generate</button>
+      </div>
+      <div class="box encryption">
+          <h2>Encrypt </h2>
+          <label for="publicKeyEncrypt">Recipient's Public Key:</label>
+          <textarea id="publicKeyEncrypt" placeholder="Enter public key here"></textarea>
+          <label for="plainTextEncrypt">Your Message:</label>
+          <textarea id="plainTextEncrypt" placeholder="Enter message to encrypt"></textarea>
+          <label for="cipherText">Encrypted Message:</label>
+          <textarea id="cipherText" placeholder="Your encrypted message"></textarea>
+          <button id="encrypt">Encrypt</button>
+      </div>
+      <div class="box decryption">
+          <h2>Decrypt </h2>
+          <label for="privateKeyDecrypt">Your Private Decryption Key:</label>
+          <textarea id="privateKeyDecrypt" placeholder="Enter private decryption key here"></textarea>
+          <label for="cipherTextDecrypt">Received Encrypted Message:</label>
+          <textarea id="cipherTextDecrypt" placeholder="Enter received encrypted message"></textarea>
+          <label for="plainTextDecrypt">Decrypted Message:</label>
+          <textarea id="plainTextDecrypt" placeholder="Your decrypted message"></textarea>
+          <button id="decrypt">Decrypt</button>
+      </div>
+  </div>
+    <script src="script1.js"></script>
+  </body>
+</html>
